@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Contact.Master.cs" Inherits="Portfolio3.masterpage.Contact" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <link href="../style/StyleSheet.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.9.1.js"></script>
+    <link href="../style/bootstrap.css" rel="stylesheet" />
+    <script src="../Scripts/bootstrap.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+         <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../default.aspx">Bikramjeet Singh Anand</a>
+
+            <br />
+            <br />
+            <h4 style="margin-top:-6px;font-size:16px;color:#9d9d9d; text-align:right">If you don’t live for something, you will die for nothing. </h4>
+
+
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../pages/MyWork.aspx">My Work</a></li>
+            <li><a href="../pages/AboutMe.aspx">About Me</a></li>
+            <li><a href="../pages/Myservices.aspx">Services</a></li>
+            <li><a href="../pages/ContactMe.aspx">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+
+         
+      </div>
+            
+    </div>
+
+
+
+           <div class="container">
+
+               <div class="row">
+				<div class="col-lg-8 col-lg-offset-2 ">
+					<div class="centered"> 
+                    <img src="../images/default.jpg" class="longCircle" />
+                        </div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+        
+				</div><!-- /col-lg-8 -->
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+
+
+       	<div id="footer">
+		<div class="container">
+			<div class="row" style="color:white ;text-align:center">
+                @Copy Right 2016 Bikramjeet Singh Anand
+                  <div class="bottom-right text-right">
+
+                     <a href="https://www.facebook.com/bikramjeetsingh.anand"> <img src="../images/facebook.png" /> </a>
+                      <a href="https://www.plus.google.com/102698889131415313523"><img src="../images/gpls.png" /> </a>
+                      <a href="https://www.instagram.com/singhanand8400/"><img src="../images/instr.png" /></a>
+                      <a href="https://ca.linkedin.com/in/bikramjeet-anand-318411119"><img src="../images/lkin.png" /> </a>
+             </div>
+         </div>
+            </div>
+               </div>
+    
+    </form>
+</body>
+</html>
